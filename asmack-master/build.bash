@@ -542,6 +542,16 @@ fetchall
 createVersionTag
 createbuildsrc
 patchsrc "patch"
+
+##
+## BEGIN Modification for android platform build system
+##
+echo done with android modifications
+exit
+##
+## END Modification for android platform build system
+##
+
 if $BUILD_JINGLE ; then
   patchsrc "jingle"
   JINGLE_ARGS="-Djingle=lib/jstun.jar"
